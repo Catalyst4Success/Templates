@@ -1,0 +1,568 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Biscaya - HTML Responsive Theme</title>
+	
+	<meta name="description" content="Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here. Thanks so much!">
+	<meta name="author" content="WowThemes.net">
+	<meta name="copyright" content="WowThemes.net">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2012-03-27T00:00:00+02:00">	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">	
+	<script src="js/jquery.1.6.4.js"></script>	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushJScript.js"></script>	
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/logo.png);}
+		a{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="http://www.wowthemes.net" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#html_structure">HTML Structure</a></li>
+			<li><a href="#css_files_and_structure">Layouts, Stylesheets, Colors</a></li>
+			<li><a href="#menu">Menu</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>			
+			<li><a href="#carousel">Carousel</a></li>
+			<li><a href="#flexslider">FlexSlider</a></li>
+			<li><a href="#cameraslider">Camera Slider</a></li>
+			<li><a href="#contact">Contact Form</a></li>
+			<li><a href="#sources_and_credits">Sources and Credits</a></li>
+			<li><a href="#support">Theme Support</a></li>
+		</ol>
+		<div id="documenter_copyright">Copyright WowThemes.net 2013 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Biscaya</h1><h2>Responsive HTML Template</h2><hr><ul><li>Created: July, 2013</li><li>By: WowThemes.net</li><li><a href=""></a></li><li>Email: <a href="mailto:wowthemesnet@gmail.com">wowthemesnet@gmail.com</a></li></ul>. <p>Thank you for purchasing our theme. If you have any questions, please feel free to email us! </p></section><section id="html_structure">
+	<h3>HTML Structure</h3><hr class="notop">
+<p>For a simple two column layout, create a <B>.row-fluid</B> and add the appropriate number of .span* columns. As this is a 12-column grid, each .span* spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).Everything is wrapped within the <b>.container</b> class.</p>
+
+<p>Example:</p>
+<pre class="brush: css">
+<div class="container">
+	<div class="row-fluid">
+		<div class="span8">
+			Main content here
+		</div>
+		<div class="span4">
+			Sidebar here
+		</div> 
+	</div>
+	<div class="row-fluid">
+		<div class="span6">
+			Half column here
+		</div>
+		<div class="span6">
+			Other half here
+		</div> 
+	</div>
+</div>
+</pre> 
+<p>Our document "columns.html" is useful if you want to see more of these 12 columns variations, but here's an illustrative example.</p>
+<p><img alt="" src="assets/images/grid.png"></p>
+<p>&nbsp;</p>
+</section>
+
+<section id="css_files_and_structure">
+	<h3>CSS Files and Structure</h3><hr class="notop">
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px; -webkit-text-size-adjust: none; ">There are four main CSS files used in theme.&nbsp; </span></p>
+
+<ol style="margin-top: 18px; margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56); -webkit-text-size-adjust: none; border-style: initial; border-color: initial; ">
+	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 36px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal; list-style-position: initial; list-style-image: initial; border-style: initial; border-color: initial; ">
+		<strong style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline; border-style: initial; border-color: initial; ">bootstrap.css</strong>&nbsp;-&nbsp; (the original bootstrap stylesheet);</li>
+	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 36px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal; list-style-position: initial; list-style-image: initial; border-style: initial; border-color: initial; ">
+		<strong style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline; border-style: initial; border-color: initial; ">style.css</strong>&nbsp;-&nbsp; (custom stylesheet for our theme);</li>
+
+	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 36px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal; list-style-position: initial; list-style-image: initial; border-style: initial; border-color: initial; ">
+		<strong style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline; border-style: initial; border-color: initial; ">skin-orange.css</strong>&nbsp; (current skin for this theme)</li>
+    
+	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 36px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal; list-style-position: initial; list-style-image: initial; border-style: initial; border-color: initial; ">
+		<strong style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline; border-style: initial; border-color: initial; ">bootstrap-responsive.css</strong>&nbsp;- stylesheet for responsive layout.</li>
+</ol>
+<p>It is important that you keep the order of the stylesheet files in header as shown in our theme</p>
+
+<p style="text-decoration:underline;">How to change color skin</p>
+	<p>In order to change the color skin, replace <b>skin-orange.css</b> in all of our html documents with the skin color of your choice from <b>css/</b> folder.</p>
+	<p>Example,if you choose the green skin, replace:</p>
+	<pre class="brush:css"><link rel="stylesheet" href="css/skin-orange.css"></pre>
+	with
+	<pre class="brush:css"><link rel="stylesheet" href="css/skin-green.css"></pre>	
+	
+
+
+
+<p style="text-decoration:underline;">How to change your theme to wide layout</p>
+<p>Add the following piece of code at the very <b>bottom</b> of <i>style.css</i> file (from css/ folder):</p>
+<pre class="brush:css">
+body.boxed div.body {width:100%;}
+body.boxed {padding:0px;}
+.graysection {margin-left: 0px;margin-right: 0px;padding-left: 0px;padding-right: 0px;background:#fff;}
+</pre>
+
+<p style="text-decoration:underline;">How to change your background</p>
+<p>The easy way: Go to <b>img/bg/</b> folder. Replace "pic2.jpg" with your own image. Keep the name and the extension the same.</p>
+<p>The less simple way: Open <i>style.css</i> from <b>css/</b> folder. See line 9 (top of the document) for "body.boxed". Replace the url of the background image with the url to your own image.</p>
+<p>Important: You may <b>not</b> always want the full width image background (in example you might want to use a pattern), in this case make sure you <b>remove the following (from the same "body.boxed" class area)</b>:
+
+<pre class="brush:css">
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+</pre>
+and make background repeat like this:
+<pre class="brush:css">
+background-repeat: repeat;
+</pre>
+
+</section>
+
+
+<section id="menu">
+	<h3>Masonry</h3><hr class="notop">
+	<p style="text-transform:uppercase;"><b> Structure</b></p>
+<pre class="brush:css">
+<li><a href="index.html">Home</a></li>
+<li class="divider-vertical"></li>
+
+<li><a href="about.html">About</a></li>
+<li class="divider-vertical"></li>
+
+<li><a href="services.html">Services</a></li>
+<li class="divider-vertical"></li>
+</pre>
+
+
+<p style="text-transform:uppercase;"><b> Dropdown Item</b></p>
+<pre class="brush:css">
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Layouts <b class="caret"></b></a>
+	<ul class="dropdown-menu js-activated" style="display: none;">
+		<li><a href="columns.html">Columns</a></li>
+		<li><a href="masonry4.html">Masonry 4</a></li>
+		<li><a href="masonry3.html">Masonry 3</a></li>
+		<li><a href="masonry2.html">Masonry 2</a></li>
+		<!--.dropdown-->
+	</ul>
+</li>
+</pre>
+
+<p style="text-transform:uppercase;"><b> Set Active Class</b></p>
+<pre class="brush:css">
+<li class="active"><a href="index.html">Home</a></li>
+</pre>
+<p>"Home" item will be now highlighted in menu.</p>
+
+<p style="text-transform:uppercase;"><b> Set Class for Responsive Menu</b></p>
+<pre class="brush:css">
+<li class="selected"><a href="index.html">Home</a></li>
+</pre>
+<p>What does it do? It highlights the menu item of the page you are visiting when using responsive menu.</p>
+
+<p>You can combine the "active" class with the "selected" one, like this:</p>
+<pre class="brush:css">
+<li class="active selected"><a href="index.html">Home</a></li>
+</pre>
+
+</section>
+
+<section id="javascript">
+	<h3>JavaScript</h3><hr class="notop">
+<p>
+	&nbsp;</p>
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px; -webkit-text-size-adjust: none; ">This theme imports several Javascript files:</span></strong></p>
+<b>
+jquery.js<br/>
+bootstrap.js -> bootstrap plugins<br/>
+plugins.js -> gathers more scripts in one files - TinyNav, Isotope, Easing, carouFredSel, FlexSlider, Camera, Placeholder, Quovolver<br/> 
+html5shiv.js ->  enable use of HTML5 sectioning elements in legacy Internet Explorer<br/>    
+jquery.prettyPhoto.js -> gallery<br/> 
+
+</b>
+</section>
+<section id="portfolio">
+	<h3>Portfolio</h3><hr class="notop">
+	
+	
+<p style="text-transform:uppercase;"><b> Structure</b></p>
+<pre class="brush:css">
+<div class="boxportfolio3 cat2 cat3">
+	<div class="boxcontainer">
+		<img src="img/dummyimage.jpg" alt="">
+		<div class="roll">
+			<div class="wrapcaption">
+				<a href="singleproject.html"><i class="icon-link captionicons"></i></a>
+				<a data-gal="prettyPhoto[gallery1]" href="img/dummyimage.jpg" title="Title Here"><i class="icon-zoom-in captionicons"></i></a>
+			</div>
+		</div>
+		<h1><a href="singleproject.html">Title</a></h1>
+		<p>
+			 short descr.
+		</p>
+	</div>
+</div>
+</pre>
+	
+<p class="info">
+What to do: 
+Line 1 - replace/add your categories (cat1 cat3). See below for more details<br>
+Line 3 and Line 6 - replace img/dummyimage.jpg with your own image path<br>
+Line 6 and Line 10- replace singleproject.html with the link to your project single<br>
+Line 10 - replace your title<br>
+Line 12 - a very short description<br>
+</p>	
+	
+<p class="info">
+ABOUT THE FILTERING<br/>
+You have noticed above, line 1, "cat2 cat3". These are the categories of items, as defined in the filter navigation. See below the filter navigation as found in our theme, too:
+</p>	
+
+<pre class="brush:css">
+<div id="filter">
+	<ul>
+		<li><a href="" data-filter="*" class="selected"><i class="icon icon-reorder"></i> All Items</a></li>
+		<li><a href="" data-filter=".cat1"><i class="icon icon-th-large"></i> Landscape</a></li>
+		<li><a href="" data-filter=".cat2"><i class="icon icon-th-list"></i> Overview</a></li>
+		<li><a href="" data-filter=".cat3"><i class="icon icon-th"></i> Green Nature</a></li>
+	</ul>
+</div>
+</section>
+</pre>
+
+<p>
+So, add <b>cat1</b> if for example you want your item to appear when you click on Landscape. Or <b>cat3</b> for Green Nature click. Or <b>cat1 cat3</b> for both etc.
+</p>
+	
+
+
+<section id="carousel">
+     <h3>Carousel</h3><hr class="notop">
+
+<p>In our theme the carousel plugin is used as an example in elements.html file & index.html.<br/>
+ 
+ 
+<p>Structure:</p>
+<pre class="brush:css">
+<div class="row-fluid">
+	<div class="span12">
+		<h1 class="title text-center">Featured Clients </h1>
+		<div class="bordered">
+		</div>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="span12">
+		<div class="list_carousel">
+			<div class="carousel_nav">
+				<a class="prev" id="car_prev" href="#"><span>prev</span></a>
+				<a class="next" id="car_next" href="#"><span>next</span></a>
+			</div>
+			<div class="clearfix">
+			</div>
+			<ul id="recent-projects">
+				<!--box 1-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+				<!--box 2-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+				<!--box 3-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+				<!--box 4-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+				<!--box 5-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+				<!--box 6-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+				<!--box 7-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+				<!--box 8-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+			</ul>
+			<div class="clearfix">
+			</div>
+		</div>
+	</div>
+</div>
+</pre>
+
+<p>Call the script</p>
+<pre class="brush:css">
+$(window).load(function(){			
+		$('#recent-projects').carouFredSel({
+			responsive: true,
+			width: '100%',
+			auto: true,
+			circular	: true,
+			infinite	: false,
+			prev : {
+				button		: "#car_prev",
+				key			: "left",
+					},
+			next : {
+				button		: "#car_next",
+				key			: "right",
+						},
+			swipe: {
+				onMouse: true,
+				onTouch: true
+				},
+			scroll : 2000,
+			items: {
+				visible: {
+					min: 4,
+					max: 4
+				}
+			}
+		});
+	});
+</pre>
+
+<p class="info">
+Replace lines 23, 24 with the number of items to be shown.
+</p>
+</section>	
+
+<section id="flexslider">
+     <h3>Flex Slider</h3><hr class="notop">
+In our theme, the slider is used as an example in projectdetail.html.<br/>
+
+<p>Structure:</p>
+<pre class="brush:css">
+<div class="flexslider">
+	<ul class="slides">
+		<li>
+		<img src="img/dummyimage.jpg" alt="">
+		</li>
+		<li>
+		<img src="img/dummyimage.jpg" alt="">
+		</li>
+		<li>
+		<img src="img/dummyimage.jpg" alt="">
+		</li>
+	</ul>
+</div>
+</pre>
+
+<p>Call the script</p>
+<pre class="brush:css">
+$(window).load(function() {
+$('.flexslider').flexslider({
+animation: "slide"
+});
+});
+</pre>
+
+<p>Advanced Options</p>
+<pre class="brush:css">
+namespace: "flex-",             //{NEW} String: Prefix string attached to the class of every element generated by the plugin
+selector: ".slides > li",       //{NEW} Selector: Must match a simple pattern. '{container} > {slide}' -- Ignore pattern at your own peril
+animation: "fade",              //String: Select your animation type, "fade" or "slide"
+easing: "swing",               //{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!
+direction: "horizontal",        //String: Select the sliding direction, "horizontal" or "vertical"
+reverse: false,                 //{NEW} Boolean: Reverse the animation direction
+animationLoop: true,             //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+smoothHeight: false,            //{NEW} Boolean: Allow height of the slider to animate smoothly in horizontal mode  
+startAt: 0,                     //Integer: The slide that the slider should start on. Array notation (0 = first slide)
+slideshow: true,                //Boolean: Animate slider automatically
+slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+animationSpeed: 600,            //Integer: Set the speed of animations, in milliseconds
+initDelay: 0,                   //{NEW} Integer: Set an initialization delay, in milliseconds
+randomize: false,               //Boolean: Randomize slide order
+ 
+// Usability features
+pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+pauseOnHover: false,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+useCSS: true,                   //{NEW} Boolean: Slider will use CSS3 transitions if available
+touch: true,                    //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
+video: false,                   //{NEW} Boolean: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches
+ 
+// Primary Controls
+controlNav: true,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+directionNav: true,             //Boolean: Create navigation for previous/next navigation? (true/false)
+prevText: "Previous",           //String: Set the text for the "previous" directionNav item
+nextText: "Next",               //String: Set the text for the "next" directionNav item
+ 
+// Secondary Navigation
+keyboard: true,                 //Boolean: Allow slider navigating via keyboard left/right keys
+multipleKeyboard: false,        //{NEW} Boolean: Allow keyboard navigation to affect multiple sliders. Default behavior cuts out keyboard navigation with more than one slider present.
+mousewheel: false,              //{UPDATED} Boolean: Requires jquery.mousewheel.js (https://github.com/brandonaaron/jquery-mousewheel) - Allows slider navigating via mousewheel
+pausePlay: false,               //Boolean: Create pause/play dynamic element
+pauseText: 'Pause',             //String: Set the text for the "pause" pausePlay item
+playText: 'Play',               //String: Set the text for the "play" pausePlay item
+ 
+// Special properties
+controlsContainer: "",          //{UPDATED} Selector: USE CLASS SELECTOR. Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be ".flexslider-container". Property is ignored if given element is not found.
+manualControls: "",             //Selector: Declare custom control navigation. Examples would be ".flex-control-nav li" or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
+sync: "",                       //{NEW} Selector: Mirror the actions performed on this slider with another slider. Use with care.
+asNavFor: "",                   //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
+ 
+// Carousel Options
+itemWidth: 0,                   //{NEW} Integer: Box-model width of individual carousel items, including horizontal borders and padding.
+itemMargin: 0,                  //{NEW} Integer: Margin between carousel items.
+minItems: 0,                    //{NEW} Integer: Minimum number of carousel items that should be visible. Items will resize fluidly when below this.
+maxItems: 0,                    //{NEW} Integer: Maxmimum number of carousel items that should be visible. Items will resize fluidly when above this limit.
+move: 0,                        //{NEW} Integer: Number of carousel items that should move on animation. If 0, slider will move all visible items.
+                                 
+// Callback API
+start: function(){},            //Callback: function(slider) - Fires when the slider loads the first slide
+before: function(){},           //Callback: function(slider) - Fires asynchronously with each slider animation
+after: function(){},            //Callback: function(slider) - Fires after each slider animation completes
+end: function(){},              //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)
+added: function(){},            //{NEW} Callback: function(slider) - Fires after a slide is added
+removed: function(){}           //{NEW} Callback: function(slider) - Fires after a slide is removed
+</pre>
+</section>
+
+<section id="cameraslider">
+<p style="text-transform:uppercase;"><b> Structure</b></p>
+<pre class="brush:css">
+<div class="camera_wrap pattern_4 camera_emboss" id="camera_wrap_4">
+	<div data-src="img/demo/slide1.jpg">
+		<div class="camera_caption fadeFromTop">
+			<h1>MultiPurpose Responsive Template</h1>
+			<span>
+			Professional & modern website template created for you and your business prosperity. Build a top-notch business website in no time! </span>
+		</div>
+	</div>
+	<div data-src="img/demo/slide2.jpg">
+		<div class="camera_caption fadeFromRight">
+			<h1>Professional Design & Elegant Code</h1>
+			<span>
+			Beautiful behind the scenes too! Biscaya Template comes with top notch customer support to help you get your business online fast. </span>
+		</div>
+	</div>
+</div>
+</pre>
+
+
+<p style="text-transform:uppercase;"><b> Call the Script</b></p>
+<pre class="brush:css">
+jQuery(function(){
+	jQuery('#camera_wrap_4').camera({
+		height: 'auto',
+		loader: 'bar',
+		pagination: false,
+		thumbnails: false,
+		hover: false,
+		opacityOnGrid: false,
+		imagePath: 'img/'
+	});
+});
+</pre>
+<p>More options and full documentation: http://www.pixedelic.com/plugins/camera/ </p>
+
+<section id="contact">
+	<h3>Contact Form</h3><hr class="notop">
+	<p>The contact form from <b>footer</b> is functional, just replace the current e-mail address with your own.
+	Find the following line in <b>contact.php</b> file (23 if you're using Notepad++ editor) and replace the existing e-mail address with your own. </p>
+	<p>The contact form from <b>contact.html</b> page is different but functional, too (+ it has captcha system enabled). Go to post.php file and replace the existing e-mail address at line 9 with your own.
+	</p>
+	<pre class="brush:js">$to = 'wowthemesnet@gmail.com';</pre>
+</section>
+<section id="sources_and_credits">
+	<h3>Sources and Credits</h3><hr class="notop"><p>
+	We&#39;ve used the following images, icons or other files as listed. We do not own any credits for it.</p>
+<ul>
+<li><a href="http://twitter.github.com/bootstrap/">Bootstrap</a></li>
+<li><a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a></li>
+<li><a href="http://www.woothemes.com/flexslider/">Flex Slider</a></li>
+<li><a href="http://www.pixedelic.com/plugins/camera/">Camera Slider</a></li>
+<li><a href="http://caroufredsel.dev7studios.com/index.php">carouFredsel</a></li>
+<li><a href="http://caroufredsel.dev7studios.com/index.php">Quovolver</a></li>
+<li><a href="http://isotope.metafizzy.co/">Isotope</a></li>
+<li><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">Pretty Photo</a></li>
+<li><a href="https://github.com/aFarkas/html5shiv">HTML5 Shiv</a></li>
+<li><a href="http://http://www.fontsquirrel.com/">OpenSans & Pacifico Font </a></li>
+</ul>
+<hr>
+</section>
+
+<section id="support">
+<h3>Theme Support</h3><hr class="notop">
+<p>Our support service is guaranteed and we are dedicated to providing you with the best one. <br/>
+<a href="http://www.wowthemes.net/support/">Complete the form</a> and we will respond within 24 hours on business days, from Monday to Friday, 09.00-19.00, Europe Timezone. 
+<br/>Support does not include the addition of new functions or changes to the standard functionality.</p>
+
+<h5><i>Thank you for choosing our themes!</i></h5>,
+<a href="http://www.wowthemes.net/premium-themes-templates/">WowThemes.net</a> Team
+	</div>
+</body>
+</html>
